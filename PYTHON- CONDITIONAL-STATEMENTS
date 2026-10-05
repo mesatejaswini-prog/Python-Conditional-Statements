@@ -1,0 +1,156 @@
+num = int(input("Enter a number: "))
+
+if num % 2 == 0:
+    print("Even number")
+else:
+    print("Odd number")
+
+Output:
+Enter a number: 10
+Even number
+
+
+
+num = int(input("Enter a number: "))
+
+if num > 0:
+    print("Positive number")
+elif num < 0:
+    print("Negative number")
+else:
+    print("Zero")
+
+Output:
+Enter a number: -5
+Negative number
+
+
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+if a > b:
+    print("Largest number:", a)
+else:
+    print("Largest number:", b)
+
+Output:
+Enter first number: 25
+Enter second number: 15
+Largest number: 25
+
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+
+if a >= b and a >= c:
+    largest = a
+elif b >= a and b >= c:
+    largest = b
+else:
+    largest = c
+
+print("Largest number:", largest)
+
+Output:
+Enter first number: 10
+Enter second number: 25
+Enter third number: 15
+Largest number: 25
+
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+
+if a <= b and a <= c:
+    smallest = a
+elif b <= a and b <= c:
+    smallest = b
+else:
+    smallest = c
+
+print("Smallest number:", smallest)
+
+Output:
+Enter first number: 10
+Enter second number: 25
+Enter third number: 15
+Smallest number: 10
+
+
+
+age = int(input("Enter your age: "))
+
+if age >= 18:
+    print("Eligible to vote")
+else:
+    print("Not eligible to vote")
+
+Output:
+Enter your age: 20
+Eligible to vote
+
+
+
+year = int(input("Enter a year: "))
+
+if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):
+    print("Leap year")
+else:
+    print("Not a leap year")
+
+Output:
+Enter a year: 2024
+Leap year
+
+
+ch = input("Enter an alphabet: ")
+
+if ch.lower() in "aeiou":
+    print("Vowel")
+else:
+    print("Consonant")
+
+Output:
+Enter an alphabet: A
+Vowel
+
+
+
+ch = input("Enter a character: ")
+
+if ch.isalpha():
+    print("Alphabet")
+elif ch.isdigit():
+    print("Digit")
+else:
+    print("Special character")
+
+Output:
+Enter a character: @
+Special character
+
+
+
+marks = float(input("Enter your marks: "))
+
+if marks >= 90:
+    grade = "A"
+elif marks >= 80:
+    grade = "B"
+elif marks >= 70:
+    grade = "C"
+elif marks >= 60:
+    grade = "D"
+elif marks >= 40:
+    grade = "E"
+else:
+    grade = "F"
+
+print("Grade:", grade)
+
+Output:
+Enter your marks: 85
+Grade: B
